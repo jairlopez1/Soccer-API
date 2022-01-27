@@ -1,0 +1,131 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <title>
+        My Soccer Teams Database
+    </title>
+    <link rel="stylesheet" href="style.css">
+    <script src="main.js"></script>
+</head>
+
+<body>
+    <h1 id="mainTitle">Soccer Teams</h1>
+    <div id="selectDIV">
+        <label for="action">What do you want to do? </label>
+        <select id="selectAction" name="action">
+            <option disabled selected value> -- select an option -- </option>
+            <option value="create">Create New Team</option>
+            <option value="update">Update Team</option>
+            <option value="delete">Delete Team</option>
+            <option value="displayById">Look up Teams by ID</option>
+            <option value="displayByName">Look up Teams by Name</option>
+        </select>
+    </div>
+
+    <button id="getAllBTN">Show All Teams</button>
+
+    <div id="createForm" class="create">
+        <h1 id="formName">Create New Team</h1>
+
+        <div id="enterId">
+            <label for="name">Enter team id: </label>
+            <input type="text" id="createId">
+        </div>
+
+        <div id="enterName">
+            <label for="name">Enter team name: </label>
+            <input type="text" id="name">
+        </div>
+
+        <div id="enterTrophies">
+            <label for="trophies">Enter trophies: </label>
+            <input type="number" id="trophies">
+        </div>
+
+        <div id="selectCountry">
+            <label for="country">Select a country:</label>
+            <input type="text" id="country" name="country">
+        </div>
+
+        <div id="enterPlayers">
+            <label for="players">Enter the players names:</label>
+            <br>
+            <textarea id="players" cols="40" rows="5"></textarea>
+        </div>
+
+        <button id="createBTN">Submit</button>
+    </div>
+
+    <div id="updateForm" class="update">
+        <h1 id="formName">Update Team</h1>
+
+        <div id="enterID">
+            <label for="ID">Enter team ID: </label>
+            <input type="text" id="updateID">
+        </div>
+
+        <div id="enterName">
+            <label for="name">Enter team name: </label>
+            <input type="text" id="updateName">
+        </div>
+
+        <div id="enterTrophies">
+            <label for="trophies">Enter trophies: </label>
+            <input type="number" id="updateTrophies">
+        </div>
+
+        <div id="selectCountry">
+            <label for="country">Select a country:</label>
+            <input type="text" id="updateCountry" name="country">
+        </div>
+
+        <div id="enterPlayers">
+            <label for="players">Enter the players names:</label>
+            <br>
+            <textarea id="updatePlayers" cols="40" rows="5"></textarea>
+        </div>
+
+        <button id="updateBTN">Submit</button>
+    </div>
+
+    <div id="deleteForm" class="delete">
+        <h1 id="formName">Delete Team</h1>
+        <div id="enterID">
+            <label for="ID">Enter team ID: </label>
+            <input type="text" id="deleteID">
+        </div>
+        <button id="deleteBTN">Submit</button>
+    </div>
+
+    <div id="findByIdForm" class="findID">
+        <h1 id="formName">Find Team by ID</h1>
+        <div id="enterID">
+            <label for="ID">Enter team ID: </label>
+            <input type="text" id="IDSearch">
+        </div>
+        <button id="findIDBTN">Submit</button>
+    </div>
+
+    <div id="findByNameForm" class="findName">
+        <h1 id="formName">Find Team by Name</h1>
+        <div id="enterName">
+            <label for="name">Enter team name: </label>
+            <input type="text" id="nameSearch">
+        </div>
+        <button id="findNameBTN">Submit</button>
+    </div>
+
+    <!--Where messages are shown-->
+    <div class="message">
+
+    </div>
+
+    <!--Where teams are shown-->
+    <div id="teamsDiv">
+
+    </div>
+
+</body>
+
+</html>
